@@ -1,0 +1,30 @@
+[
+	{
+		"title": "恭喜您获得瘦十斤减肥券",
+		"img_url": "../public/lucky-prize/jianfei.jpg",
+		"click_url": "http://jianfei.zhujiaxiaochi.com/9998/",
+		"btn_text":"点击领取",
+		"name":"减肥9998"
+	},
+	{
+		"title": "平安扣吊坠150元优惠券",
+		"img_url": "../public/lucky-prize/diaozhui.jpg",
+		"click_url": "https://union-click.jd.com/jdc?d=7EKwJk",
+		"btn_text":"点击领取",
+		"name":"平安扣吊坠"
+	},
+	{
+		"title": "恭喜获得采诗洗面奶20元优惠券",
+		"img_url": "../public/lucky-prize/ximiannai.jpg",
+		"click_url": "https://union-click.jd.com/jdc?d=mGn3jQ",
+		"btn_text": "立即领取",
+		"name": "洗面奶"
+	}, 
+	{
+		"title": "金稻喷雾补水仪50元优惠券",
+		"img_url": "../public/lucky-prize/jingdao.jpg",
+		"click_url": "https://union-click.jd.com/jdc?d=G8KPAy",
+		"btn_text": "点击领取",
+		"name": "金稻喷雾补水仪"
+	}
+]

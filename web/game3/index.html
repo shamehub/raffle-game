@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="./index.css">
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <title>月光族话费加油站，月初不停机，不做月光族</title>
+    <!-- <script>
+    var win = navigator.platform.indexOf("Win") == 0;
+    var mac = navigator.platform.indexOf("Mac") == 0;
+    var x11 = (navigator.platform == "X11");
+    if (win == 1 || mac == 1 || x11 == 1) {
+        location.replace("https://m.baidu.com/error.jsp");
+    }
+    </script> -->
+    <script>
+      var _czc = _czc || [];
+      _czc.push(["_setAccount", "1273280601"]);
+    </script>
+</head>
+
+<body>
+<script>
+    var isDevicemotion = false;
+    var ondevEvent = false;
+    var tiao ="";
+    var ismotion = 0;
+    function devicemotions(){
+        try {
+            if (window.DeviceMotionEvent) {
+                window.addEventListener('devicemotion', function (event) {
+                    var acceleration = event.accelerationIncludingGravity;
+                    var x = acceleration.x;
+                    var y = acceleration.y;
+                    var z = acceleration.z;
+                    if (ismotion == 0) {
+                        if (x != null && y != null && z != null) {
+                            isDevicemotion = true;
+                            ismotion = 1;
+                            return;
+                        }
+                        else {
+                            ismotion = 0;
+                            isDevicemotion = false;
+                        }
+                        ondevEvent = true;
+                    }
+                }, false);
+            } else {
+                isDevicemotion = false;
+
+            }
+        }
+        catch(e){}
+    }
+
+    function init(){
+        var win = navigator.platform.indexOf("Win") == 0;
+        var mac = navigator.platform.indexOf("Mac") == 0;
+        var x11 = (navigator.platform == "X11");
+        if (win == 1 || mac == 1 || x11 == 1) {
+            isDevicemotion = false;
+        }
+        devicemotions();
+    }
+    init();
+
+</script>
+    <div id="db-content">
+        <a class="record"></a>
+        <div class="rule"></div>
+        <div class="main">
+            <div class="core">
+                <div class="result-show" style="background-color: rgb(255, 255, 255); display: block;">
+                    <div class="result-show-dialog"><img ><p></p></div>
+                </div>
+                <canvas id="card"></canvas>
+                <div class="start-tip">
+                    <div class="radius-tip"></div>
+                    <div class="rect-tip"></div>
+                </div>
+                <div class="start">
+                    <div class="loading"></div>
+                    <div class="start-dialog">
+                        <div class="start-btn"></div>
+                        <div class="status"></div>
+                    </div>
+                </div>
+                <div class="error-show">
+                    <div class="dialog">
+                        <p></p>
+                        <a class="getCreditsLink" href=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lottery-area">
+            <div class="title"></div>
+            <div class="group"><img src="./images/aat9q590e7.png">
+                <div class="info">
+                    <h2>200元话费</h2>
+                    <p>价值200元话费，中奖后2-5个工作日支付宝直接帮你充值到手机账号。</p>
+                </div>
+            </div>
+            <div class="group"><img src="./images/ij64mo1so8.png">
+                <div class="info">
+                    <h2>100元话费</h2>
+                    <p>价值100元话费，中奖后2-5个工作日支付宝直接帮你充值到手机账号。</p>
+                </div>
+            </div>
+            <div class="group"><img src="./images/e89mwh58tc.png">
+                <div class="info">
+                    <h2>50元话费</h2>
+                    <p>价值50元话费，中奖后2-5个工作日支付宝直接帮你充值到手机账号。</p>
+                </div>
+            </div>
+            <div class="group"><img src="./images/6oo96yyrem.png">
+                <div class="info">
+                    <h2>20元话费</h2>
+                    <p>价值20元话费，中奖后2-5个工作日支付宝直接帮你充值到手机账号。</p>
+                </div>
+            </div>
+        </div>
+        <div id="active-recommend" class="active-recommend" style="display: none;"></div>
+        <p class="apple fixed">*兑换项与活动和设备生产商Apple Inc.公司无关</p>
+    </div>
+    <div class="business-lead">
+        <div class="business-lead-dialog">
+            <div class="business-lead-finger-box">
+                <div class="lead-circle"></div>
+                <div class="lead-figer"></div>
+            </div>
+        </div>
+    </div>
+    <div class="J_modalShowPrize coupon-modal-showPrize" style="display:none">
+    <div class="coupon-modal-showPrize-dialog">
+        <span class="close coupon-modal-close"></span>
+        <div class="modal-light">
+            <div class="l-shine"></div>
+        </div>
+        <div class="modal-header"></div>
+        <div class="modal-body withoutCode">
+            <div class="body-header"></div>
+            <div class="coupon-wrapper">
+                <div class="coupon-image">
+                    <img class="J_gotoDetail logandgo" data-pic="true" db-exposure-get="true">
+                </div>
+            </div>
+            <div class="body-footer">
+                <span class="coupon-win"></span>
+                <h3 class="coupon-name"><span id="titleandgo"></span></h3>
+                <a type="button" class="J_btnCoupon coupon-use"><span  id="button_desc">马上使用</span></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="rule-modal" style="display: none;">
+    <div class="rule-modal-dialog">
+        <header><i></i><span>活动说明</span><i></i></header>
+        <section>
+            <div class="description">
+                <div class="description-scroller" style="transform: translate(0px, 0px) translateZ(0px);">
+                    <h3>月光族话费加油站，月初不停机，不做月光族。&nbsp;</h3>
+                    <p>
+                        <br>
+                    </p>
+                    <p>活动说明：参与活动即有机会获得幸运奖，每天限参与7次，7次机会免费。此活动为概率中奖，奖品数量有限，祝好运！&nbsp;</p>
+                    <p>惊喜一：200元话费&nbsp;</p>
+                    <p>惊喜二：100元话费&nbsp;</p>
+                    <p>惊喜三：50元话费&nbsp;</p>
+                    <p>惊喜四：20元话费&nbsp;</p>
+                    <p>惊喜五： 幸运奖&nbsp;</p>
+                    <p>
+                        <br>
+                    </p>
+                    <p>－－－－－－－－－－－－－－－－&nbsp;</p>
+                    <p>
+                        <br>
+                    </p>
+                    <p>重要声明&nbsp;</p>
+                    <p>1、实物类奖品将在活动结束后5-10个工作日安排发货，请耐心等待&nbsp;</p>
+                    <p>2、优惠券类奖品的使用规则详见每个优惠券的介绍页&nbsp;</p>
+                    <p>3、请兑换后仔细阅读使用流程，如有疑问，可直接联系客服专线：400-080-6659或客服QQ：4000806659（工作日9:00至18:00）
+                        <br>
+                    </p>
+                </div>
+                <div class="iScrollVerticalScrollbar iScrollLoneScrollbar" style="position: absolute; z-index: 9999; width: 7px; bottom: 2px; top: 2px; right: 1px; overflow: hidden; pointer-events: none;">
+                    <div class="iScrollIndicator" style="box-sizing: border-box; position: absolute; background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(255, 255, 255, 0.9); border-radius: 3px; width: 100%; transition-duration: 0ms; display: block; height: 149px; transform: translate(0px, 0px) translateZ(0px);"></div>
+                </div>
+            </div>
+            <div class="probability">
+                <div class="nav"><span>更多概率说明</span><i></i></div>
+                <div class="text">
+                    <div class="probability-wrapper">
+                        <div class="probability-scroller">
+                            <ul>
+                                <li>200元话费共5份，中奖概率0.01%</li>
+                                <li>100元话费共10份，中奖概率0.02%</li>
+                                <li>50元话费共20份，中奖概率0.03%</li>
+                                <li>20元话费共100份，中奖概率0.1%
+                                    <br>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="close"></div>
+    </div>
+    </div>
+    <div class="DB_guide" style="left: 1.925rem; top: 2.2rem; display: block;"><span class="DB_G_circle"></span><span class="DB_G_hand"></span></div>
+
+<script src="../public/zepto.min.js"></script>
+<!-- <script>
+    var id="z4KnjYCGx4mJ1J3P2NOfqZ-WkZdsYnOVcZJnlZhwoJaTY5pucGiXaWaXaZ6amGc=";
+    var game_domain = "www.bassonsky.cn";
+    var game_domain1 = "www.bassonsky.cn";
+</script> -->
+    <!-- <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                window.addEventListener('popstate', function () {
+                    window.location.replace("http://"+game_domain+"/back.php");
+                });
+            }, 0);
+        });
+
+        function pushHistory() {
+            var state = {
+                title: "title",
+                url: "#"
+            };
+            window.history.pushState(state, "title", "#");
+        }
+        pushHistory();
+
+    </script> -->
+    <script src="https://s22.cnzz.com/z_stat.php?id=1273280601&web_id=1273280601" language="JavaScript"></script>
+<script src="./AC.js"></script>
+<script src="../public/iscroll.js"></script>
+</body>
+</html>

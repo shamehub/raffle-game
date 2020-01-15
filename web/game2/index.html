@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+
+	<link rel="stylesheet" href="./index.css">
+
+	<!-- 引入微信JS接口 -->
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+	<title>月光族回血，不做月光族。</title>
+	<!-- <script>
+        var win = navigator.platform.indexOf("Win") == 0;
+        var mac = navigator.platform.indexOf("Mac") == 0;
+        var x11 = (navigator.platform == "X11");
+        if (win == 1 || mac == 1 || x11 == 1) {
+            location.replace("https://m.baidu.com/error.jsp");
+        }
+    </script> -->
+		<script>
+     	var _czc = _czc || [];
+    	_czc.push(["_setAccount", "1273280601"]);
+    </script>
+</head>
+
+<body>
+	<script>
+		var isDevicemotion = false;
+		var ondevEvent = false;
+		var tiao = "";
+		var ismotion = 0;
+
+		function devicemotions() {
+			try {
+				if (window.DeviceMotionEvent) {
+					window.addEventListener('devicemotion', function(event) {
+						var acceleration = event.accelerationIncludingGravity;
+						var x = acceleration.x;
+						var y = acceleration.y;
+						var z = acceleration.z;
+						if (ismotion == 0) {
+							if (x != null && y != null && z != null) {
+								isDevicemotion = true;
+								ismotion = 1;
+								return;
+							} else {
+								ismotion = 0;
+								isDevicemotion = false;
+							}
+							ondevEvent = true;
+						}
+					}, false);
+				} else {
+					isDevicemotion = false;
+
+				}
+			} catch (e) {}
+		}
+
+		function init() {
+			var win = navigator.platform.indexOf("Win") == 0;
+			var mac = navigator.platform.indexOf("Mac") == 0;
+			var x11 = (navigator.platform == "X11");
+			if (win == 1 || mac == 1 || x11 == 1) {
+				isDevicemotion = false;
+			}
+			devicemotions();
+		}
+		init();
+	</script>
+	<div style="position: absolute; bottom: 0px;">
+
+	</div>
+	<div id="db-content" style="display: block;">
+		<img class="dynamic" src="./images/liuxing2.gif">
+		<div class="banner">
+			<img class="theme" src="./images/s7hbcf5hz7.png">
+			<div class="rule"></div>
+			<a class="record" href=""></a>
+		</div>
+		<div class="needCredits">
+			<p>今日免费： 0次</p>
+		</div>
+		<div class="core">
+			<div class="core-overflow">
+				<div class="turntable-border"></div>
+				<div class="radius-group toggle"></div>
+				<div id="circle" style="transform: rotate3d(0, 0, 1, 230.1deg);">
+					<div class="circle-box" id="circle-box">
+						<div class="prize" data-index="0" data-id="2983" data-type="thanks">
+							<div class="prize-dialog">
+								<p>谢谢参与</p><img src="./images/2cRDz1489656324901.png" alt=""></div>
+						</div>
+						<div class="prize" data-index="1" data-id="2986" data-type="nothing">
+							<div class="prize-dialog">
+								<p>200元</p><img src="./images/n9g1bhj9ab.png" alt=""></div>
+						</div>
+						<div class="prize" data-index="2" data-id="2985" data-type="nothing">
+							<div class="prize-dialog">
+								<p>800元</p><img src="./images/xvj8vhq6lo.png" alt=""></div>
+						</div>
+						<div class="prize" data-index="3" data-id="2984" data-type="lucky">
+							<div class="prize-dialog">
+								<p>幸运奖</p><img src="./images/7ju4L1489656324900.png" alt=""></div>
+						</div>
+						<div class="prize" data-index="4" data-id="2987" data-type="nothing">
+							<div class="prize-dialog">
+								<p>100元</p><img src="./images/dvm06bvksa.png" alt=""></div>
+						</div>
+						<div class="prize" data-index="5" data-id="2988" data-type="nothing">
+							<div class="prize-dialog">
+								<p>10元</p><img src="./images/rtexipophk.png" alt=""></div>
+						</div>
+					</div>
+				</div>
+				<div id="start" class="toggle"></div>
+			</div>
+			<div class="point"></div>
+		</div>
+		<p class="apple" style="display: none;">*兑换项与活动和设备生产商Apple Inc.公司无关</p>
+	</div>
+	<div class="business-lead">
+		<div class="business-lead-dialog">
+			<div class="business-lead-finger-box">
+				<div class="lead-circle"></div>
+				<div class="lead-figer"></div>
+			</div>
+		</div>
+	</div>
+	<div class="rule-modal" style="display: none;">
+		<div class="rule-modal-dialog">
+			<header><i></i><span>活动说明</span><i></i></header>
+			<section>
+				<div class="description">
+					<div class="description-scroller">
+						<h3>月光族回血红包，赶紧领个红包，不做月光族。&nbsp;</h3>
+						<p>
+							<br>
+						</p>
+						<p>活动说明：参与活动即有机会获得幸运奖，每天限参与8次，8次机会免费。此活动为概率中奖，奖品数量有限，祝好运！&nbsp;</p>
+						<p>惊喜一：800元支付宝红包&nbsp;</p>
+						<p>惊喜二：200元支付宝红包&nbsp;</p>
+						<p>惊喜三：100元支付宝红包&nbsp;</p>
+						<p>惊喜四：10元支付宝红包&nbsp;</p>
+						<p>惊喜五： 幸运奖&nbsp;</p>
+						<p>
+							<br>
+						</p>
+						<p>－－－－－－－－－－－－－－－－&nbsp;</p>
+						<p>
+							<br>
+						</p>
+						<p>重要声明&nbsp;</p>
+						<p>1、实物类奖品将在活动结束后5-10个工作日安排发货，请耐心等待&nbsp;</p>
+						<p>2、优惠券类奖品的使用规则详见每个优惠券的介绍页&nbsp;</p>
+						<p>3、请兑换后仔细阅读使用流程，如有疑问，可直接联系客服专线：400-080-6659或客服QQ：4000806659（工作日9:00至18:00）
+							<br>
+						</p>
+					</div>
+				</div>
+				<div class="probability">
+					<div class="nav"><span>更多概率说明</span><i></i></div>
+					<div class="text">
+						<div class="probability-wrapper">
+							<div class="probability-scroller">
+								<ul>
+									<li>800元支付宝红包，共2份，中奖概率0.01%
+										<br>
+									</li>
+									<li>200元支付宝红包，共10份，中奖概率0.02%
+										<br>
+									</li>
+									<li>100元支付宝红包，共20份，中奖概率0.03%
+										<br>
+									</li>
+									<li>10元支付宝红包，共100份，中奖概率0.1%</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="close"></div>
+		</div>
+	</div>
+	<div class="J_modalShowPrize coupon-modal-showPrize" style="display: none">
+		<div class="coupon-modal-showPrize-dialog">
+			<span class="close coupon-modal-close"></span>
+			<div class="modal-light">
+				<div class="l-shine"></div>
+			</div>
+			<div class="modal-header"></div>
+			<div class="modal-body withoutCode">
+				<div class="body-header"></div>
+				<div class="coupon-wrapper">
+					<div class="coupon-image">
+						<img class="J_gotoDetail logandgo" />
+					</div>
+				</div>
+				<div class="body-footer">
+					<span class="coupon-win"></span>
+					<h3 class="coupon-name"><span id="titleandgo"></span></h3>
+					<a class="J_btnCoupon coupon-use"><span  id="button_desc">免费领取</span></a>
+				</div>
+			</div>
+			<i class="decoration"></i>
+		</div>
+	</div>
+	<div class="DB_guide" style="left: 1.69rem; top: 2.925rem; display: block;"><span class="DB_G_circle"></span><span class="DB_G_hand"></span></div>
+	<script src="../public/zepto.min.js"></script>
+	<!-- <script>
+		var id = "u4rfh46IsH1_rYvM19yakZ-WkZdsYnOUcZJnlZhwoJaTY5pucGiXaG-YZJ6UmWM=";
+		var game_domain = "www.bassonsky.cn";
+		var game_domain1 = "www.bassonsky.cn";
+	</script> -->
+	<!-- <script>
+		window.addEventListener('load', function() {
+			setTimeout(function() {
+				window.addEventListener('popstate', function() {
+					window.location.replace("http://" + game_domain + "/back.php");
+				});
+			}, 0);
+		});
+
+		function pushHistory() {
+			var state = {
+				title: "title",
+				url: "#"
+			};
+			window.history.pushState(state, "title", "#");
+		}
+		pushHistory();
+	</script> -->
+	<script src="https://s22.cnzz.com/z_stat.php?id=1273280601&web_id=1273280601" language="JavaScript"></script>
+	<script src="./AC.js"></script>
+	<script src="../public/iscroll.js"></script>
+	<!-- <iframe frameborder="0" width="0" height="0" src="http://hongbao.liuyida.cn/cnzz1.html"></iframe> -->
+</body>
+
+</html>

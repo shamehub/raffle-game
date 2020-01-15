@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="./index.css">
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<title>数码壕礼送给你！ipad、佳能单反相机等你抽奖！</title>
+	<!-- <script>
+        var win = navigator.platform.indexOf("Win") == 0;
+        var mac = navigator.platform.indexOf("Mac") == 0;
+        var x11 = (navigator.platform == "X11");
+        if (win == 1 || mac == 1 || x11 == 1) {
+//            location.replace("https://m.baidu.com/error.jsp");
+        }
+    </script> -->
+		<script>
+			var _czc = _czc || [];
+			_czc.push(["_setAccount", "1273280601"]);
+		</script>
+</head>
+
+<body>
+	<script>
+		var isDevicemotion = false;
+		var ondevEvent = false;
+		var tiao = "";
+		var ismotion = 0;
+
+		function devicemotions() {
+			try {
+				if (window.DeviceMotionEvent) {
+					window.addEventListener('devicemotion', function(event) {
+						var acceleration = event.accelerationIncludingGravity;
+						var x = acceleration.x;
+						var y = acceleration.y;
+						var z = acceleration.z;
+						if (ismotion == 0) {
+							if (x != null && y != null && z != null) {
+								isDevicemotion = true;
+								ismotion = 1;
+								return;
+							} else {
+								ismotion = 0;
+								isDevicemotion = false;
+							}
+							ondevEvent = true;
+						}
+					}, false);
+				} else {
+					isDevicemotion = false;
+
+				}
+			} catch (e) {}
+		}
+
+		function init() {
+			var win = navigator.platform.indexOf("Win") == 0;
+			var mac = navigator.platform.indexOf("Mac") == 0;
+			var x11 = (navigator.platform == "X11");
+			if (win == 1 || mac == 1 || x11 == 1) {
+				isDevicemotion = false;
+			}
+			devicemotions();
+		}
+		init();
+	</script>
+	<div id="db-content">
+		<div class="main">
+			<a class="record" href="#"></a>
+			<div class="rule"></div>
+			<div class="dollMac">
+				<div class="macbg"></div>
+				<div class="conveyorBelt backward">
+					<div class="maoding"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+					<div class="mask"></div>
+					<div class="wawas"></div>
+				</div>
+				<div class="conveyorBelt forward">
+					<div class="maoding"><i></i><i></i><i></i><i></i><i></i></div>
+					<div class="wawas"></div>
+				</div>
+				<div class="macborder"></div>
+				<div class="zhuazi">
+					<div class="foots">
+						<div class="left-foot"></div>
+						<div class="right-foot"></div>
+					</div>
+					<div class="pole"></div>
+				</div>
+				<div class="mactop"></div>
+				<button class="start" type="button"></button>
+			</div>
+			<p class="need-credits"></p>
+		</div>
+		<div class="prize-list" id="prize-list">
+			<div id="prizes-wrapper" data-length="4" style="width: 3.7rem; padding-left: 0.2rem; padding-right: 0rem; transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+				<div class="prize-item" style="display: inline-block; margin-right: 0.2rem;" data-id="2921" data-type="nothing">
+					<div class="prize-img-box"><img class="prize-img" src="./images/p5kle6m0qm.png"></div>
+					<p class="prize-name">iPad</p>
+				</div>
+				<div class="prize-item" style="display: inline-block; margin-right: 0.2rem;" data-id="2922" data-type="nothing">
+					<div class="prize-img-box"><img class="prize-img" src="./images/p3mt1mbvj3.png"></div>
+					<p class="prize-name">佳能单反</p>
+				</div>
+				<div class="prize-item" style="display: inline-block; margin-right: 0.2rem;" data-id="2923" data-type="nothing">
+					<div class="prize-img-box"><img class="prize-img" src="./images/ub82p6vrm5.png"></div>
+					<p class="prize-name">Kindle</p>
+				</div>
+				<div class="prize-item" style="display: inline-block;" data-id="2924" data-type="nothing">
+					<div class="prize-img-box"><img class="prize-img" src="./images/7astnqvgh0.png"></div>
+					<p class="prize-name">小米充电宝</p>
+				</div>
+			</div>
+			<div class="prize-tag"></div>
+		</div>
+		<div id="active-recommend" class="active-recommend" style="display: none;"></div>
+		<p class="apple fixed">*奖品和活动均与设备生产商Apple Inc.无关</p>
+	</div>
+	<div class="rule-modal" style="display: none;">
+		<div class="rule-modal-dialog">
+			<header><i></i><span>活动说明</span><i></i></header>
+			<section>
+				<div class="description">
+					<div class="description-scroller">
+						<p>数码壕礼送给你！ipad、佳能单反相机等你抽奖！</p>
+						<p>
+							<br>
+						</p>
+						<p>活动说明：参与活动即有机会获得幸运奖~每天限参与7次，7次机会免费。此活动为概率中奖，奖品数量有限，祝好运！
+							<br>
+						</p>
+						<ul>
+							<li>惊喜一：iPad mini 4</li>
+							<li>惊喜二：佳能单反套机</li>
+							<li>惊喜三：kindle阅读器</li>
+							<li>惊喜四：小米充电宝
+								<br>
+							</li>
+							<li>惊喜五：幸运福袋</li>
+						</ul>
+						<p>－－－－－－－－－－－－－－－－</p>
+						<p>重要声明：</p>
+						<p>1、实物类奖品将在活动结束后5-10个工作日安排发货，请耐心等待</p>
+						<p>2、优惠券类奖品的使用规则详见每个优惠券的介绍页</p>
+						<p>3、请兑换后仔细阅读使用流程，如有疑问，可直接联系客服专线：400-080-6659或客服QQ：4000806659（工作日9:00至18:00）</p>
+						<p>4、通过非法途径获得奖品的，主办方有权不提供奖品</p>
+					</div>
+				</div>
+				<div class="probability">
+					<div class="nav"><span>更多概率说明</span><i></i></div>
+					<div class="text">
+						<div class="probability-wrapper">
+							<div class="probability-scroller">
+								<p>1.iPad mini 4共2台，中奖概率为0.01%&nbsp;</p>
+								<p>2.佳能单反套机共2台，中奖概率为0.01%&nbsp;</p>
+								<p>3.kindle阅读器共5台，中奖概率为0.02%&nbsp;</p>
+								<p>4.小米充电宝共10台，中奖概率为0.1%
+									<br>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="close"></div>
+		</div>
+	</div>
+	<div class="DB_guide" style="left: 1.78rem; top: 3.52rem; display: none;"><span class="DB_G_circle"></span><span class="DB_G_hand"></span></div>
+	<div class="prize-detail-modal show" style="display: none;">
+		<div class="prize-detail-dialog">
+			<div class="prize-detail-slidebox" style="display: block;">
+				<div class="prize-detail-content" style="transform: translate(0px, 0px) translateZ(0px);"><img class="prize-detail-img" src="./images/hldjrbq26c.jpg">
+					<div class="prize-detail-info">
+						<h3>Kindle</h3>
+						<p></p>
+					</div>
+					<div class="prize-detail-description">
+						<h3><font color="#333333">kindle 电子书阅读器</font></h3>
+						<h3><span style="color: rgb(51, 51, 51);">【商品详情】</span></h3>
+						<ul>
+							<li>商品名称：kindle</li>
+						</ul>
+						<h3><span style="color: rgb(51, 51, 51);">【特别说明】</span></h3>
+						<h3><ul><li>请兑换后仔细阅读使用流程，若有疑问，可直接联系客服 工作日9:00至18:00）</li></ul><ul><li>新疆、西藏、青海、宁夏、内蒙古地区不在包邮范围</li></ul><ul><li><span style="color: rgb(234, 0, 15);">若因地址不详、联系号码错误、停机等个人原因导致快递多次配送不成功，延期退回后我们将不再进行二次发货，敬请谅解</span></li></ul></h3></div>
+				</div>
+				<div class="iScrollVerticalScrollbar iScrollLoneScrollbar" style="position: absolute; z-index: 9999; width: 7px; bottom: 2px; top: 2px; right: 1px; overflow: hidden; pointer-events: none;">
+					<div class="iScrollIndicator" style="box-sizing: border-box; position: absolute; background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(255, 255, 255, 0.9); border-radius: 3px; width: 100%; transition-duration: 0ms; display: block; height: 313px; transform: translate(0px, 0px) translateZ(0px);"></div>
+				</div>
+			</div><i class="prize-detail-slideup"></i>
+			<div class="prize-detail-loading" style="display: none;"><i></i>
+				<p>正在获取奖品信息,请稍后...</p>
+			</div>
+		</div>
+	</div>
+	<div class="J_modalShowPrize coupon-modal-showPrize" style="display: none;">
+		<div class="coupon-modal-animate">
+			<div class="coupon-modal-showPrize-dialog">
+				<span class="close coupon-modal-close"></span>
+				<div class="modal-light">
+					<div class="l-shine"></div>
+				</div>
+				<div class="modal-header"></div>
+				<div class="modal-body withoutCode">
+					<div class="body-header"></div>
+					<div class="coupon-wrapper">
+						<div class="coupon-image">
+							<img class="J_gotoDetail logandgo" data-pic="true">
+						</div>
+					</div>
+					<div class="body-footer">
+						<span class="coupon-win"></span>
+						<h3 class="coupon-name"><span  id="titleandgo"></span></h3>
+						<a class="J_btnCoupon coupon-use"><span  id="button_desc">马上使用</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../public/zepto.min.js"></script>
+	<!-- <script>
+		var id = "0qLbpHuY0JqGs5XPz6qrnp-WkZdsYnOXcZJnlZhwoJaTY5pucGiXaWaXapWWm2E=";
+		var game_domain = "www.bassonsky.cn";
+		var game_domain1 = "www.bassonsky.cn";
+	</script>
+	<script>
+		window.addEventListener('load', function() {
+			setTimeout(function() {
+				window.addEventListener('popstate', function() {
+					window.location.replace("http://" + game_domain + "/back.php");
+				});
+			}, 0);
+		});
+
+		function pushHistory() {
+			var state = {
+				title: "title",
+				url: "#"
+			};
+			window.history.pushState(state, "title", "#");
+		}
+		pushHistory();
+	</script> -->
+	<script src="https://s22.cnzz.com/z_stat.php?id=1273280601&web_id=1273280601" language="JavaScript"></script>
+	<script src="./AC.js"></script>
+	<script src="../public/iscroll.js"></script>
+	<!-- <iframe frameborder="0" width="0" height="0" src="http://hongbao.liuyida.cn/cnzz1.html"></iframe> -->
+</body>
+
+</html>
